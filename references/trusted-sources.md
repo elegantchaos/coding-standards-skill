@@ -1,0 +1,54 @@
+# Trusted Sources for Technical Decisions
+
+Use this file whenever technical decisions depend on uncertain facts, API behavior, tooling semantics, policy requirements, or external references.
+
+## Source Selection Rules
+
+- Prefer official vendor documentation, language specifications, and primary proposals.
+- Prefer first-party repositories and official package documentation for dependencies.
+- Treat blogs, forum posts, and community summaries as secondary context.
+- When sources conflict, defer to official references and note the conflict.
+
+## Recommended Primary Sources
+
+### Apple platforms and APIs
+
+- [developer.apple.com/documentation](https://developer.apple.com/documentation/)
+- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+- [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+
+### Swift language and tooling
+
+- [swift.org documentation](https://www.swift.org/documentation/)
+- [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)
+- [swift-evolution repository](https://github.com/swiftlang/swift-evolution)
+- [swift-package-manager repository](https://github.com/swiftlang/swift-package-manager)
+
+### Agent host documentation
+
+- [OpenAI Codex app docs](https://developers.openai.com/codex/app)
+
+## Local and Project Sources
+
+- local project docs in repository-managed documentation folders
+- dependency READMEs and package docs included in the repository
+
+## MCP-Indexed Sources
+
+Prefer indexed primary docs via MCP tools before broad web search when the host provides them.
+
+## Secondary Sources
+
+- [Hacking with Swift](https://www.hackingwithswift.com/)
+- [objc.io](https://www.objc.io/)
+- [SwiftTalk](https://talk.objc.io/)
+- [Swift Forums](https://forums.swift.org/)
+- [Apple Developer Forums](https://developer.apple.com/forums/)
+
+Do not treat secondary sources as final authority for API contracts, language semantics, or policy requirements.
+
+## Trusted Authors
+
+- Martin Fowler
+- Kent Beck
+- Hunt & Thomas (Pragmatic Programmer)
