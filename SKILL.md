@@ -22,4 +22,4 @@ Load only the references that matter for the task:
 - `references/good-code.md` - quality criteria for code, tests, docs, and maintainability.
 - `references/principles.md` - shared engineering principles and tradeoffs.
 - `references/implementation-guidance.md` - change strategy, compatibility, interfaces, dependencies, documentation, and comment guidance.
-- `references/trusted-sources.md` - source-selection policy and primary-source recommendations for technical decisions.
+- `references/trusted-sources.md` - generic source-selection policy; language- and ecosystem-specific source lists belong in language skills.
