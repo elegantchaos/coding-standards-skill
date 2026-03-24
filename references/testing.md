@@ -13,6 +13,8 @@ Platform-specific rules are allowed to take precedence.
 - Full end-to-end integration tests can require network access if it is essential.
 - Focus testing on changed behavior, important failure paths, and regression risk rather than chasing raw coverage numbers.
 - Prefer tests through stable interfaces, and avoid excessive mocking when cheap real collaborators are available.
+- Keep fixtures, factories, and test helpers simple and local unless repeated reuse justifies sharing them.
+- Avoid sleeps and other time-based synchronization when a more explicit readiness or completion signal is available.
 - If relevant tests cannot be run, report the exact gap and the likely risk.
 
 ## UI Code

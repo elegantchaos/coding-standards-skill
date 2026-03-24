@@ -15,3 +15,7 @@ Reuse the project's existing runner, task system, and command entry points rathe
 Prefer factoring large scripts into multiple sub-commands, rather than a single monolithic script controlled by many `--arguments`.
 
 Consider usability, clarity and discoverability when designing script CLIs.
+
+Make failure output actionable and concise.
+
+Document non-obvious prerequisites close to the script entry point.
