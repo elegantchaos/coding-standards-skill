@@ -1,4 +1,4 @@
-# Trusted Sources for Technical Decisions
+# Trusted External Sources for Technical Decisions
 
 Use this file whenever technical decisions depend on uncertain facts, API behavior, tooling semantics, policy requirements, or external references.
 

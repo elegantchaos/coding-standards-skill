@@ -1,29 +1,19 @@
 ---
 name: coding-standards
-description: Applies shared coding standards, engineering principles, code-quality guidance, and source-selection rules across software projects. Use when reading, writing, or reviewing code that needs cross-language design, maintainability, change-strategy, or research guidance not owned by a language- or framework-specific skill.
+description: Applies shared coding standards, engineering principles, code-quality guidance, hygiene guidance, and source-selection rules across software projects. Use when reading, writing, or reviewing code.
 ---
 
 # Coding Standards
 
-Use this skill as the cross-language baseline for software work.
-It covers code quality, engineering principles, change strategy, interface design, maintainability, and source-selection guidance that should stay consistent across languages.
+Use this skill as the baseline for software work.
+It covers code quality, engineering principles, change strategy, repository hygiene, interface design, maintainability, and source-selection guidance that should stay consistent across languages.
 
 Load only the references that matter for the task:
 
-1. Read `references/good-code.md` for general code quality and review criteria.
-2. Read `references/principles.md` when design, abstraction, or architecture choices are in play.
-3. Read `references/implementation-guidance.md` when planning or reviewing change scope, compatibility, interfaces, documentation, or comments.
-4. Read `references/scripting.md` when writing or reviewing repository-maintained scripts, automation, or task runners.
-5. Read `references/testing.md` when deciding how much test coverage to add, how to structure tests, or how previews and UI tests fit into the validation strategy.
-6. Read `references/trusted-sources.md` when technical decisions depend on external references, vendor APIs, language semantics, or policy guidance.
-7. If the task has a language or framework specialist skill, use this skill for the cross-language baseline and treat the specialist skill as authoritative for domain-specific detail.
-8. Do not duplicate workflow guidance owned by other skills. Use dedicated validation, hygiene, git, or GitHub skills separately when those concerns are in scope.
-
-## References
-
-- `references/good-code.md` - quality criteria for code, tests, docs, and maintainability.
-- `references/principles.md` - shared engineering principles and tradeoffs.
-- `references/implementation-guidance.md` - change strategy, compatibility, interfaces, dependencies, documentation, and comment guidance.
-- `references/scripting.md` - house scripting policy and guidance for repository-maintained automation.
-- `references/testing.md` - cross-language testing expectations, coverage intent, and preview/UI-testing guidance.
-- `references/trusted-sources.md` - generic source-selection policy; language- and ecosystem-specific source lists belong in language skills.
+1. Read `references/good-code.md` to guide quality criteria covering code, tests, docs, and maintainability.
+2. Read `references/principles.md` to guide design, abstraction, or architecture tradeoffs are in play.
+3. Read `references/implementation.md` to guide change scope, precedence, compatibility, interfaces, documentation, comments, formatting, linting, structure, or cleanup.
+4. Read `references/scripting.md` to guide writing or reviewing repository-maintained scripts, automation, or task runners.
+5. Read `references/testing.md` to guide unit, integration and UI test coverage, and UI previews.
+6. Read `references/external.md` when searching for external references, vendor APIs, language semantics, or policy guidance.
+7. If the task has a language or framework specialist skill, use the guidance here as a baseline. Treat the specialist skill as authoritative for domain-specific detail.
