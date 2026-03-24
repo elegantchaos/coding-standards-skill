@@ -7,7 +7,7 @@ Use this file when deciding how broad a change should be and how code should be 
 - Follow repository-local `AGENTS.md` first.
 - Then follow any local guidance explicitly referenced by that `AGENTS.md`.
 - Use relevant skills.
-- Use `~/.../agents/references/COMMON.md` only to fill gaps or resolve ambiguity.
+- Use `~/.local/share/agents/COMMON.md` only to fill gaps or resolve ambiguity.
 - Never let shared fallback guidance override explicit local repository rules.
 
 ## Change Strategy
