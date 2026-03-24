@@ -65,3 +65,8 @@ Use this file when deciding how broad a change should be and how code should be 
 - They should be compact but informative.
 - They do not need to slavishly repeat every parameter or return type.
 - Add a larger comment before each type definition giving its purpose and design.
+
+## Path Portability
+
+- Do not embed machine-specific absolute paths in committed code, documentation, or configuration.
+- Prefer repository-relative paths for resources that live in the current repository.

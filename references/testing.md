@@ -28,3 +28,20 @@ Create UI tests that target important behaviours, state changes, and key navigat
 UI tests can be fragile - avoid creating tests that are sensitive to stylistic or layout changes.
 
 Use previews to support fast iteration, but do not treat them as a full replacement for other relevant UI or integration validation.
+
+## Validation Workflow
+
+How to verify that code changes were succesful:
+
+1. Run narrow checks closest to the change first.
+2. Run broader project checks next.
+3. For Swift projects, use the `validation-flow-skill` when it applies.
+4. If validation cannot run, report exactly what was not validated and why.
+
+## Reporting Guidance
+
+When summarizing work:
+
+- list what checks were run
+- list what checks were skipped
+- call out meaningful residual risk from skipped validation
