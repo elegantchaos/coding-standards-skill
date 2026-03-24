@@ -28,7 +28,12 @@ Use this file when deciding how broad a change should be and how code should be 
 ## Documentation And Comments
 
 - Keep documentation factual and aligned with current behavior.
-- Update docs when workflows, commands, or architecture change.
-- Add documentation comments when they clarify intent, contracts, or non-obvious constraints.
+- Update documentation and comments when workflows, commands, or architecture change.
 - Do not use comments to restate symbol names or obvious control flow.
 - Keep inline comments sparse and reserve them for subtle logic that a future maintainer could misread.
+- Add documentation comments to all types and members, including private members:
+  - For the benefit of someone browsing the code.
+  - To allow IDEs to surface documentation in their UIs.
+  - They should be compact but informative.
+  - They do not need to slavishly repeat every parameter or return type.
+  - Add a larger comment before each type definition giving its purpose and design.

@@ -13,13 +13,17 @@ Load only the references that matter for the task:
 1. Read `references/good-code.md` for general code quality and review criteria.
 2. Read `references/principles.md` when design, abstraction, or architecture choices are in play.
 3. Read `references/implementation-guidance.md` when planning or reviewing change scope, compatibility, interfaces, documentation, or comments.
-4. Read `references/trusted-sources.md` when technical decisions depend on external references, vendor APIs, language semantics, or policy guidance.
-5. If the task has a language or framework specialist skill, use this skill for the cross-language baseline and treat the specialist skill as authoritative for domain-specific detail.
-6. Do not duplicate workflow guidance owned by other skills. Use dedicated validation, hygiene, git, or GitHub skills separately when those concerns are in scope.
+4. Read `references/scripting.md` when writing or reviewing repository-maintained scripts, automation, or task runners.
+5. Read `references/testing.md` when deciding how much test coverage to add, how to structure tests, or how previews and UI tests fit into the validation strategy.
+6. Read `references/trusted-sources.md` when technical decisions depend on external references, vendor APIs, language semantics, or policy guidance.
+7. If the task has a language or framework specialist skill, use this skill for the cross-language baseline and treat the specialist skill as authoritative for domain-specific detail.
+8. Do not duplicate workflow guidance owned by other skills. Use dedicated validation, hygiene, git, or GitHub skills separately when those concerns are in scope.
 
 ## References
 
 - `references/good-code.md` - quality criteria for code, tests, docs, and maintainability.
 - `references/principles.md` - shared engineering principles and tradeoffs.
 - `references/implementation-guidance.md` - change strategy, compatibility, interfaces, dependencies, documentation, and comment guidance.
+- `references/scripting.md` - house scripting policy and guidance for repository-maintained automation.
+- `references/testing.md` - cross-language testing expectations, coverage intent, and preview/UI-testing guidance.
 - `references/trusted-sources.md` - generic source-selection policy; language- and ecosystem-specific source lists belong in language skills.
