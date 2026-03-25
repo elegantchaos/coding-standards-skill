@@ -12,21 +12,25 @@ Use this file when deciding how broad a change should be and how code should be 
 
 ## Change Strategy
 
-- Prefer minimal, focused changes that solve the requested problem.
 - Prefer fixing root causes over layered workarounds.
-- Modernize or adopt a new architecture only when it is warranted by the problem.
-- Avoid leaving a code path half-migrated into mixed styles without a clear reason.
+- Prefer minimal, focused changes that solve the requested problem.
+- If large changes are needed, split them into a series of small changes.
+- Refactor aggressively to avoid code duplication.
+- Modernize aggressively.
+- If you adopt a new architecture to solve a problem, refactor the existing codebase to stay consistent.
 - Keep diffs focused and easy to review.
-- If a structural change adds complexity, explain what concrete duplication, failure mode, or maintenance risk it resolves.
+- If a change adds complexity, explain what problem it solves and why it is necessary.
 - Prefer formatters and linters over manual stylistic rewriting.
 - Use project configuration or language-specific guidance to determine format/lint tooling.
 
-## Compatibility And Refactoring
+## Backwards Compatibility
 
-- Do not add shims, wrappers, adapters, aliases, or backward-compatibility layers unless compatibility support is explicitly required.
-- When refactoring an API, tool, script, or interface, treat the refactored version as the new source of truth.
-- Update known call sites, tests, and documentation as part of the same change rather than preserving old entry points by default.
-- If compatibility support is genuinely needed, make it explicit and keep its scope tight.
+- Assume that backwards compatibility is not required, unless explicitly requested.
+- Assume that you can break existing API contracts, unless explicitly prohibited.
+- Do not add shims, wrappers, adapters, aliases, or backward-compatibility layers, unless explicitly requested.
+- Treat a refactored API, tool, script, or interface as the new source of truth.
+- Update known call sites, tests, and documentation as part of the same change.
+- If compatibility support is requested, make it explicit and keep its scope tight.
 
 ## Interfaces And Dependencies
 
@@ -49,7 +53,7 @@ Use this file when deciding how broad a change should be and how code should be 
 - Do not use to restate symbol names or obvious control flow.
 - Remove stale or contradictory comments rather than layering new text on top.
 - Avoid referring to previous behaviour, migrations, legacy in comments.
-- State what the code does now.
+- State what the code does now, not what it used to do.
 
 ### Inline Comments
 
