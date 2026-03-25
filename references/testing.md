@@ -35,7 +35,7 @@ How to verify that code changes were succesful:
 
 1. Run narrow checks closest to the change first.
 2. Run broader project checks next.
-3. For Swift projects, use the `validation-flow-skill` when it applies.
+3. For Swift projects, use the `validation-flow` skill when it applies.
 4. If validation cannot run, report exactly what was not validated and why.
 
 ## Reporting Guidance
