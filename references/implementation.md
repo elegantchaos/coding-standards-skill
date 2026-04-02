@@ -12,16 +12,17 @@ Use this file when deciding how broad a change should be and how code should be 
 
 ## Change Strategy
 
-- Prefer fixing root causes over layered workarounds.
-- Prefer minimal, focused changes that solve the requested problem.
-- If large changes are needed, split them into a series of small changes.
+- Apply focused changes to perform the requested actions.
+- Fix root problems, don't layer workarounds.
+- You are allowed to adopt a new architecture, but ask first. Explain what problem it solves and why it is necessary.
+- You are allowed to modernize code aggressively.
+- You are allowed to add complexity to the design, but ask first. Explain what problem it solves and why it is necessary.
+
+## Refactoring
+
 - Refactor aggressively to avoid code duplication.
-- Modernize aggressively.
-- If you adopt a new architecture to solve a problem, refactor the existing codebase to stay consistent.
-- Keep diffs focused and easy to review.
-- If a change adds complexity, explain what problem it solves and why it is necessary.
-- Prefer formatters and linters over manual stylistic rewriting.
-- Use project configuration or language-specific guidance to determine format/lint tooling.
+- Prefer a series of small refactorings to one large one.
+- If you introduce a new architecture or idiom, refactor the existing codebase to stay consistent.
 
 ## Backwards Compatibility
 
@@ -39,13 +40,18 @@ Use this file when deciding how broad a change should be and how code should be 
 - Do not add dependencies without clear justification.
 - Keep secrets and credentials out of source control and out of committed configuration.
 
+## Formatting
+
+- Prefer formatters and linters over manual stylistic rewriting.
+- Use project configuration or language-specific guidance to determine format/lint tooling.
+
 ## Documentation
 
-- Update when workflows, commands, architecture or implementation changes.
+- Update when workflows, commands, designs, architecture or implementation changes.
+- Avoid referring to the past - document the current state.
 - Remove stale or contradictory docs rather than layering new text on top.
 - Keep factual, concise, and aligned with current behavior.
-- Avoid referring to previous designs or behaviour - document the current status.
-- If specifically instructed to produce a migration guide, you can provide historical context.
+- If specifically instructed to produce a migration guide, you can provide historical context, otherwise avoid it.
 
 ## Comments
 
