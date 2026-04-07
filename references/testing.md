@@ -1,11 +1,11 @@
 # Testing
 
-These are general rules for how to go about testing.
+These are general rules for how to go about testing, and what tooling to use.
 Platform-specific rules are allowed to take precedence.
 
 ## Non-UI Code
 
-- Use red/green TDD. Add the tests first.
+- Use red/green TDD. Write the tests first.
 - Ensure that new code has high test coverage.
 - Consider adding unit tests for older code to improve coverage.
 - Tests should be deterministic.
@@ -45,3 +45,17 @@ When summarizing work:
 - list what checks were run
 - list what checks were skipped
 - call out meaningful residual risk from skipped validation
+
+# Tooling
+
+- Prefer idiomatic command entry points for the implementation language.
+- Prefer one canonical way to run the test suite and linters in CI and locally.
+- Avoid duplicating shell wrappers when checked-in scripts or task runners already exist.
+- Use our preferred test framework for the implementation language.
+- If a new project has no framework choice yet, bias toward the modern, standard idiomatic choice for the implementation language.
+- Keep tests close to behavior, name them around observable outcomes, and avoid over-mocking code that can be exercised directly with cheap real objects.
+- Prefer the repo's configured linter/formatter. If the repo has no linter yet, keep style conservative and idiomatic for the language.
+- Run project commands to respect local environment settings (`swift run`, `bundle exec`, `penv` etc)
+- Add or update executable validation when behavior changes: tests for logic changes, lint or format checks for style-sensitive work, and packaging checks for metadata or executable wiring.
+- Don't add external dependencies without explicit permission.
+- Keep dependency additions justified. Every new dependency should remove meaningful complexity or supply capability the standard library or existing dependency graph does not already cover.
