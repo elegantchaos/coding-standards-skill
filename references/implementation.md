@@ -48,9 +48,10 @@ Use this file when deciding how broad a change should be and how code should be 
 ## Documentation
 
 - Update when workflows, commands, designs, architecture or implementation changes.
-- Avoid referring to the past - document the current state.
+- Avoid referring to the past - document the current state or future plans.
 - Remove stale or contradictory docs rather than layering new text on top.
 - Keep factual, concise, and aligned with current behavior.
+- Retain roadmap and planning documentation if it is still relevant; remove if implemented.
 - If specifically instructed to produce a migration guide, you can provide historical context, otherwise avoid it.
 
 ## Comments
@@ -60,6 +61,7 @@ Use this file when deciding how broad a change should be and how code should be 
 - Remove stale or contradictory comments rather than layering new text on top.
 - Avoid referring to previous behaviour, migrations, legacy in comments.
 - State what the code does now, not what it used to do.
+- Retain `TODO:` comments if they are still relevant; remove them if they have been implemented.
 
 ### Inline Comments
 
