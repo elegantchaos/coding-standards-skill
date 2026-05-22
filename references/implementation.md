@@ -20,9 +20,32 @@ Use this file when deciding how broad a change should be and how code should be 
 
 ## Refactoring
 
-- Refactor aggressively to avoid code duplication.
-- Prefer a series of small refactorings to one large one.
-- If you introduce a new architecture or idiom, refactor the existing codebase to stay consistent.
+Prefer a series of small refactorings to one large one.
+
+Our preferred policy is to refactor aggressively to avoid code duplication, and to keep the codebase consistent and modern, even if it risks breaking backwards compatibility.
+
+If you introduce a new architecture or idiom, refactor the existing codebase to stay consistent.
+
+Apply a refactoring scope relevant to the task.
+
+For cleanup, review, and modernisation requests, use a wide scope across the whole code base. For new code and bug fixes, use a narrower scope.
+
+### Wide Scope
+
+Look for codebase-wide refactors that:
+
+- Modernise the code.
+- Make it cleaner.
+- Make it more consistent.
+- Make it more compliant with our guidelines.
+- Make it more idiomatic for the language or platform.
+- Improve overall test coverage.
+
+### Narrow Scope
+
+- Prefer minimal, focused changes that solve the requested problem.
+- Add or update tests for new behaviour.
+- Suggest wide scope refactors for follow-up.
 
 ## Backwards Compatibility
 
