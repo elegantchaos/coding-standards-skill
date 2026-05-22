@@ -31,7 +31,7 @@ Use previews to support fast iteration, but do not treat them as a full replacem
 
 ## Validation Workflow
 
-How to verify that code changes were succesful:
+How to verify that code changes were successful:
 
 1. Run narrow checks closest to the change first.
 2. Run broader project checks next.

@@ -28,7 +28,7 @@ If you introduce a new architecture or idiom, refactor the existing codebase to 
 
 Apply a refactoring scope relevant to the task.
 
-For cleanup, review, and modernisation requests, use a wide scope across the whole code base. For new code and bug fixes, use a narrower scope.
+For cleanup, review, and modernisation requests, use a wide scope across the whole codebase. For new code and bug fixes, use a narrower scope.
 
 ### Wide Scope
 
@@ -41,7 +41,7 @@ Look for codebase-wide refactors that:
 - Make it more idiomatic for the language or platform.
 - Improve overall test coverage.
 
-### Narrow Scope
+### Narrow Scope
 
 - Prefer minimal, focused changes that solve the requested problem.
 - Add or update tests for new behaviour.
